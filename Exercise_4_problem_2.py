@@ -25,15 +25,30 @@
 
 
 # YOUR CODE HERE to define temp_classifier
+def temp_classifier(temp_celsius):
+
+  if temp_celsius<-2:
+    return 0
+  elif temp_celsius>=-2 and temp_celsius<2:
+    return 1
+  elif temp_celsius>=2 and temp_celsius<15:
+    return 2
+  elif temp_celsius>=15:
+    return 3
+# temp_classifier is a new fanction.temp_celsius is a parameter. this function can reeclass input temperature besed on the criterial in the above table and returning the reclassified value as an integer number.
 
 # Use your newly created function to print the answers to the following questions:
 
 
 # 1. What is the class value for 16.5 degrees Celsius?
 # YOUR CODE HERE
+assert temp_classifier(16.5) == 3,'Wrong claas'
+print("ok:)")
 #
 # 2. What is the class value for +2 degrees Celsius?
 # YOUR CODE HERE
+assert temp_classifier(2) == 2,'Wrong claas'
+print("ok:)")
 #
 
 
@@ -66,7 +81,7 @@ print("ok :)")
 #  - Does your function has an informative dosctring?
 
 # YOUR ANSWER HERE. Write your answer as comments
-#
+#yes.
 #
 #
 #
